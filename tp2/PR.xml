@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PROJECTRECORD SYSTEM "PR.dtd">
+<PROJECTRECORD>
+    <INFO>
+        <KEYNAME>TP2_PG41070_DIOGO_SILVA</KEYNAME>
+        <BEGINDATE>24-09-2019</BEGINDATE>
+        <TITLE>TRABALHO PRÁTICO 2</TITLE>
+        <ENDDATE>01-10-2019</ENDDATE>
+        <SUBTITLE>PR.dtd e PR.xml</SUBTITLE>
+        <SUPERVISOR LINK="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</SUPERVISOR>
+    </INFO>
+    <WORKTEAM>
+        <MEMBER>
+            <NOME>Diogo Silva</NOME>
+            <EMAIL LINK="https://github.com/diogogsilva/dweb2019">pg41070@alunos.uminho.pt</EMAIL>
+        </MEMBER>
+    </WORKTEAM>
+    <ABSTRACT>
+        <PARAGRAPH>A DTD defines the structure and the legal elements and attributes of an XML document.</PARAGRAPH>
+    </ABSTRACT>
+    <DELIVERABLES>
+        <DELIVERABLE LINK="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm">Enunciado</DELIVERABLE>
+    </DELIVERABLES>
+    <DATA>30-09-2019</DATA>
+</PROJECTRECORD>
