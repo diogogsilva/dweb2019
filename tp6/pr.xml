@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "PR.dtd">
+<pr>
+    <metadata>
+        <keyname>TP4_MEI2019_DAW</keyname>
+        <title>Trabalho Prático 6</title>
+        <subtitle>Desenvolvimento de Aplicações Web</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>21 de Outubro 2019</bdate>
+        <edate>28 de Outubro 2019</edate>
+    </metadata>
+    <workteam>
+        <member>
+            <identifier>PG41070</identifier>
+            <name>Diogo Filipe Gigante da Silva</name>
+            <email>pg41070@alunos.uminho.pt</email>
+            <git>https://github.com/diogogsilva/dweb2019</git>
+        </member>
+    </workteam>
+    <abstract>
+        <p>Trabalho Prático Número 6.<b>Desenvolvimento de Aplicações Web</b></p>
+        <p>-> App para gerir lista de arquivos sonoros</p>
+        <p>-> pr.html</p>
+        <p>-> pr.xml</p>
+        <p><i>By:</i><u><xref url="https://github.com/diogogsilva/dweb2019">Diogo Silva</xref></u></p>
+    </abstract>
+    <deliverables>
+        <deliverable path="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm">Project Record</deliverable>
+        <deliverable path="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq-son-EVO.xml">Arq-Son-Evo.xml</deliverable>
+    </deliverables>
+</pr>

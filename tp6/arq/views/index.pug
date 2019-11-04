@@ -1,0 +1,50 @@
+extends layout
+block content
+  .w3-container
+    h1.w3-container.w3-black Gestão de Músicas
+    .w3-card-4
+      .w3-card-4
+        h3.w3-container.w3-dark-grey Adicionar Música
+        form.w3-container(action='/' method='POST')
+            label
+              b Título
+            input.w3-input.w3-border.w3-light-grey(type='text' name='tit' required)
+            label
+              b Província
+            input.w3-input.w3-border.w3-light-grey(type='text' name='prov' required)
+            label
+              b Local
+            input.w3-input.w3-border.w3-light-grey(type='text' name='local' required)
+            label
+              b Músico
+            input.w3-input.w3-border.w3-light-grey(type='text' name='musico' required)
+            label
+              b Ficheiro
+            input.w3-input.w3-border.w3-light-grey(type='text' name='file')
+            label
+              b Duração
+            input.w3-input.w3-border.w3-light-grey(type='text' name='duracao' required)
+            input.w3-btn.w3-green(type='submit' value='Adicionar')
+      .w3-card-4
+        h3.w3-container.w3-dark-grey Lista de Músicas
+        input.w3-input.w3-border.w3-light-grey(type='text' placeholder='Pesquise pelo título da música...' id='filterTable' onkeyup='filterFunction()')
+        table.w3-table-all(id='songsTable')
+          tr
+            th Título
+            th Local
+            th Província
+            th Músico
+            th Duracao
+          each i,index in songs
+            tr
+              td= i.tit
+              td= i.local
+              td= i.prov
+              td= i.musico
+              td= i.duracao
+              td
+                  //button.w3-button.w3-circle.w3-blue(onclick="editaMusica('" + i.id + "')") Editar
+                  a.w3-blue-grey.w3-circle.w3-button(name=i.id href= "/" + i.id) Detalhes
+                  button.w3-button.w3-circle.w3-red(onclick="apagaMusica('" + i.id + "')") Apagar
+    footer.w3-container.w3-black
+      address Gerado por: <b>Gestão de Músicas App</b>, By <b>Diogo Silva</b>

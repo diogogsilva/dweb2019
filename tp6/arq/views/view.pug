@@ -1,0 +1,24 @@
+extends layout
+block content
+    .w3-container
+        h1.w3-container.w3-black Alterar Música
+        .w3-card-4
+            .w3-container
+                form.w3-container(action='/'+song.id method='POST')
+                    label
+                        b Título
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='tit' value=song.tit required)
+                    label
+                        b Província
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='prov' value=song.prov required)
+                    label
+                        b Local
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='local' value=song.local)
+                    label
+                        b Duração
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='duracao' value=song.duracao)
+                    input.w3-btn.w3-green(type="submit" value='Alterar')
+        footer.w3-container.w3-black
+            address Gerado por: <b>Gestão de Músicas App</b>, By <b>Diogo Silva</b>
+            address
+                a(href="/#") Voltar à página inicial
