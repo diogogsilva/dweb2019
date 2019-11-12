@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  div.w3-container.w3-dark-grey
+    h1 Lista de Nobels
+      div.w3-bar-block.w3-black
+        table.w3-table.w3-medium
+            tr
+                th 
+                  u Estado
+                th 
+                  u Sigla
+                th 
+                  u SIOE
+                th 
+                  u Designacao
+                th 
+                  u ID
+                th 
+                  u Internacional
+                th
+                  u Operacao
+            each e in lista
+                tr
+                    td= e.estado
+                    td= e.sigla
+                    td= e.sioe
+                    td= e.designacao
+                    td= e.id
+                    td= e.internacional
+                    td
+                      a(href="http://localhost:3001/" + e.id) Ver
+      footer.w3-footer.w3-medium
+        b By: Diogo Silva 
+        a(href="https://github.com/diogogsilva/dweb2019") (GitHub)
