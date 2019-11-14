@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  div.w3-container.w3-dark-grey
+    h1.w3-center= title
+    div.w3-bar-block.w3-black
+      a.w3-bar-item &#8595; Obter Nobel por ID &#8595;
+      div.w3-bar-item.w3-grey
+        input.w3-input(type="text" id="id" placeholder="Introduza o identificador...")
+        button.w3-bar-item.w3-button.w3-black(onclick="pesquisarNobelPorId()") Pesquisar
+      a.w3-bar-item.w3-button(href="http://localhost:3008/api/premios") &#8592; Lista de Nobels &#8594;
+      a.w3-bar-item &#8595; Lista de Nobels por Categoria &#8595;
+      div.w3-bar-item.w3-grey
+        input.w3-input(type="text" id="categoria" placeholder="Introduza a categoria...")
+        button.w3-bar-item.w3-button.w3-black(onclick="pesquisarListaNobelsPorCategoria()") Pesquisar
+      a.w3-bar-item &#8595; Lista de Nobels por Categoria e Ano Superior a .. &#8595;
+      div.w3-bar-item.w3-grey
+        input.w3-input(type="text" id="categoria2" placeholder="Introduza a categoria...")
+        input.w3-input(type="text" id="ano2" placeholder="Introduza o ano...")
+        button.w3-bar-item.w3-button.w3-black(onclick="pesquisarListaNobelsPorCategoriaEAno()") Pesquisar
+      a.w3-bar-item.w3-button(href="http://localhost:3008/api/categorias") &#8592; Lista de Categorias &#8594;
+      a.w3-bar-item.w3-button(href="http://localhost:3008/api/laureados") &#8592; Lista de Laureados &#8594;
+    footer.w3-footer.w3-medium.w3-right
+      b By: Diogo Silva 
+      a(href="https://github.com/diogogsilva/dweb2019") (GitHub)

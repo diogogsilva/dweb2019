@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  div.w3-container.w3-dark-grey
+    h1 Lista de Nobels
+      div.w3-bar-block.w3-black
+        table.w3-table.w3-medium
+            tr
+                th 
+                  u Prize Year
+                th 
+                  u Prize Category
+                th
+                  u Laureate FirstName
+                th
+                  u Laureate Motivation
+                th
+                  u Laureate Share
+            each p in premios
+                tr
+                    td= p.year
+                    td= p.category
+                    td
+                    td 
+                    td 
+                each l in p.laureates
+                  tr
+                      td
+                      td
+                      td= l.firstname
+                      td= l.motivation
+                      td= l.share
+      footer.w3-footer.w3-medium
+        b By: Diogo Silva 
+        a(href="https://github.com/diogogsilva/dweb2019") (GitHub)
+        br
+        a(href="http://localhost:3008/") Voltar ao Início

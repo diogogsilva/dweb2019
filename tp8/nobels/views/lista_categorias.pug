@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div.w3-container.w3-dark-grey
+    h1 Lista de Categorias
+      div.w3-bar-block.w3-black
+        table.w3-table.w3-medium
+            tr
+                th
+                  u Category
+            each c in categorias
+                tr
+                    td= c
+      footer.w3-footer.w3-medium
+        b By: Diogo Silva 
+        a(href="https://github.com/diogogsilva/dweb2019") (GitHub)
+        br
+        a(href="http://localhost:3008/") Voltar ao Início
