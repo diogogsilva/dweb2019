@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div.w3-container
+    h1.w3-header 
+        a(href="http://localhost:9999/") Entidades - ClavApi 
+    table.w3-table-all.w3-medium
+      tr
+          th 
+            u Sigla
+          th 
+            u Designacao
+          th
+            u Consultar
+      each e in lista
+          tr.clickable(data-href="http://localhost:9999/" + e.id)
+            td= e.sigla
+            td= e.designacao
+            td
+              a(href="http://localhost:9999/" + e.id) Ver
+    footer.w3-footer.w3-medium
+      b By: Diogo Silva 
+      a(href="https://github.com/diogogsilva/dweb2019") (GitHub)

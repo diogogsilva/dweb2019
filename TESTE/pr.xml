@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "PR.dtd">
+<pr>
+    <metadata>
+        <keyname>DWEB2019::Teste::PG41070</keyname>
+        <title>Teste PG41070</title>
+        <subtitle>Desenvolvimento de Aplicações Web</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>16 de Janeiro 2020</bdate>
+        <edate>16 de Janeiro 2020</edate>
+    </metadata>
+    <workteam>
+        <member>
+            <identifier>PG41070</identifier>
+            <name>Diogo Filipe Gigante da Silva</name>
+            <email>pg41070@alunos.uminho.pt</email>
+            <git>https://github.com/diogogsilva/dweb2019</git>
+        </member>
+    </workteam>
+    <abstract>
+        <p>Teste de Avaliação.<b>Desenvolvimento de Aplicações Web</b></p>
+        <p>-> arquivo-musica-digital.xml</p>
+        <p>-> arquivo.json</p>
+        <p>-> perguntasQueries.txt</p>
+        <p>(Parte 1) Diretoria: arquivos</p>
+        <p>   Passo 1 - Para importar a base dados para o Mongo, dentro da pasta Teste:</p>
+        <p>   Passo 2 - mongoimport -d arquivos -c arquivos arquivo.json --jsonArray</p>
+        <p>   Passo 3 - Para inicar o servidor, dentro da pasta arquivos</p>
+        <p>   Passo 4 - npm install</p>
+        <p>   Passo 5 - npm start</p>
+        <p>(Parte 2) Diretoria: entidades</p>
+        <p>Passo 1 - Para inicar o servidor, dentro da pasta entidades</p>
+        <p>Passo 2 - npm install</p>
+        <p>Passo 3 - npm start</p>
+        <p>-> pr.xml</p>
+        <p>-> pr.html</p>
+        <p><i>By:</i><u><xref url="https://github.com/diogogsilva/dweb2019">Diogo Silva</xref></u></p>
+    </abstract>
+    <deliverables>
+        <deliverable path="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm">Project Record</deliverable>
+        <deliverable path="http://www4.di.uminho.pt/~jcr/AULAS/didac/RepFichas/site/fichas/daw2020-e1.html">Enunciado</deliverable>
+    </deliverables>
+</pr>
